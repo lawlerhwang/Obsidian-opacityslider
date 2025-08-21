@@ -17,8 +17,6 @@ https://github.com/user-attachments/assets/1718d69e-15d4-477a-a1a8-1a74b06f8d93
 3. Transparent Built-in Browser Experience:
 For those using plugins that provide a built-in browser within Obsidian, you can make the window transparent to create a "floating" web browser, making it easier to browse the web.
 
-https://github.com/user-attachments/assets/6138d5a0-0eca-45e3-a172-5316754cbe94
-
 ## How to Install and Use
   * Download the latest release of this plugin.
   * Place the `main.js`, `manifest.json`, and `styles.css` files into your `.obsidian/plugins/opacity-slider` folder.
