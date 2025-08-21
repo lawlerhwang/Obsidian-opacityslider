@@ -1,0 +1,10 @@
+{
+	"id": "opacityslider",
+	"name": "OpacitySlider",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "A plugin to control Obsidian interface opacity with a simple slider",
+	"author": "ghu4ng",
+	"authorUrl": "https://huanggaoxiang.com",
+	"isDesktopOnly": true
+}

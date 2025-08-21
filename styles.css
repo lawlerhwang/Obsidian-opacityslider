@@ -1,0 +1,147 @@
+/* OpacitySlider 透明度控制界面样式 */
+.opacityslider-opacity-control {
+	position: fixed;
+	z-index: 9999;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	min-width: 220px;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	backdrop-filter: blur(10px);
+}
+
+.opacityslider-opacity-control.opacityslider-show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.opacityslider-title {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--text-normal);
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.opacityslider-slider-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.opacityslider-slider {
+	flex: 1;
+	height: 6px;
+	-webkit-appearance: none;
+	appearance: none;
+	background: var(--background-modifier-border);
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.opacityslider-slider:hover {
+	background: var(--background-modifier-border-hover);
+}
+
+.opacityslider-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.opacityslider-slider::-webkit-slider-thumb:hover {
+	transform: scale(1.1);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.opacityslider-slider::-webkit-slider-thumb:active {
+	transform: scale(1.05);
+}
+
+.opacityslider-slider::-moz-range-thumb {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+	cursor: pointer;
+	border: none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.opacityslider-slider::-moz-range-thumb:hover {
+	transform: scale(1.1);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.opacityslider-value {
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--text-muted);
+	min-width: 40px;
+	text-align: center;
+	background: var(--background-secondary);
+	padding: 4px 8px;
+	border-radius: 4px;
+	border: 1px solid var(--background-modifier-border);
+}
+
+/* 深色主题适配 */
+.theme-dark .opacityslider-opacity-control {
+	background: var(--background-primary);
+	border-color: var(--background-modifier-border);
+}
+
+/* 浅色主题适配 */
+.theme-light .opacityslider-opacity-control {
+	background: var(--background-primary);
+	border-color: var(--background-modifier-border);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+	.opacityslider-opacity-control {
+		min-width: 200px;
+		padding: 12px;
+	}
+	
+	.opacityslider-slider-container {
+		gap: 8px;
+	}
+}
+
+/* 动画效果 */
+@keyframes opacityslider-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes opacityslider-fade-out {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+}
