@@ -13,7 +13,6 @@ In an office or public setting, it's harder for others to clearly see what you'r
 
 https://github.com/user-attachments/assets/1718d69e-15d4-477a-a1a8-1a74b06f8d93
 
-
 3. Transparent Built-in Browser Experience:
 For those using plugins that provide a built-in browser within Obsidian, you can make the window transparent to create a "floating" web browser, making it easier to browse the web.
 
