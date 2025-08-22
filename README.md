@@ -1,5 +1,5 @@
 # Obsidian-opacityslider
-A plugin to control Obsidian interface opacity with a simple slider
+A simple slider to control interface opacity.
 
 ## Core Features
 Opacity Slider: Adds a slider to the Obsidian interface, allowing you to change the window's transparency
